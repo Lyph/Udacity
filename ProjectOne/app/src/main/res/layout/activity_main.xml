@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    tools:context="a.projectone.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:src="@drawable/logo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       android:background="#000000"
+
+        />
+    <ImageView
+        android:src="@drawable/motto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_below="@id/logo"
+        android:id="@+id/imageView"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:text="     appointment@thesuitsco.com​.\n     999-999-9999 \n     Somewhere CA 94512"
+        android:textSize="24sp"
+        android:fontFamily=""
+        android:textColor="@android:color/white"
+        android:background="#000000"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/imageView" />
+
+</LinearLayout>
+

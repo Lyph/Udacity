@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="This is my question" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/a"
+                android:textColor="@color/defaultTextColor"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/highlight"
+                android:button="@null"
+                android:gravity="center"
+                android:text="A" />
+
+            <RadioButton
+                android:id="@+id/b"
+                android:textColor="@color/defaultTextColor"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/highlight"
+                android:button="@null"
+                android:gravity="center"
+                android:text="B" />
+
+            <RadioButton
+                android:id="@+id/c"
+                android:textColor="@color/defaultTextColor"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/highlight"
+                android:button="@null"
+                android:gravity="center"
+                android:text="C" />
+
+            <RadioButton
+                android:id="@+id/d"
+                android:textColor="@color/defaultTextColor"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/highlight"
+                android:button="@null"
+                android:gravity="center"
+                android:text="D" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>
