@@ -93,16 +93,16 @@ public class MainActivity extends AppCompatActivity {
     public void initialize() { //write question here format is (question, A, B, C, D, position of correct answer), only thing you need to change.
                                // Oh also delete every function with /*if custom quiz, delete this*/
 
-        actualQuiz.add(new quizObject("What is 0 + 0?", "0", "1", "2", "3", "a"));
-        actualQuiz.add(new quizObject("What is 'U' in ASCII?", "68", "85", "67", "75", "b"));
-        actualQuiz.add(new quizObject("What is my favorite animal?", "panda", "lion", "komodo dragon", "duck", "d"));
-        actualQuiz.add(new quizObject("What was Google originally called?", "Googles", "Backrub", "Googol", "I'm pretty sure it was still Google", "b"));
-        actualQuiz.add(new quizObject("Who is the current CEO of Google?", "Kevin Ong", "Eric Schmidt", "Sundar Pichai", "John Cena", "c"));
-        actualQuiz.add(new quizObject("What was Google's first tweet that they did in binary?", "I'm Feeling Lucky", "Hello World", "We should hire Kevin Ong as our CEO", "veni, vidi, vici", "a"));
-        actualQuiz.add(new quizObject("Which of these Google projects existed?", "Google Minus", "Google Deathstar", "Google Hex", "Google Weddings", "d"));
-        actualQuiz.add(new quizObject("Google acquired Youtube from a meeting in where?", "Hong Kong", "Denys", "Costco", "Google HQ", "b"));
-        actualQuiz.add(new quizObject("Did you google any of the answers? (I won't dock you points for being honest)", "Yes", "No", "Not telling", "No I used Bing", "a"));
-        actualQuiz.add(new quizObject("What should everyone set their default browser as", "Chrome", "Firefox", "Safari", "Internet Explorer", "a"));
+        actualQuiz.add(new quizObject("What is 0 + 0?", "0", "1", "2", "3", "0000"));
+        actualQuiz.add(new quizObject("What is 'U' in ASCII?", "68", "85", "67", "75", "0100"));
+        actualQuiz.add(new quizObject("What is my favorite animal?", "panda", "lion", "komodo dragon", "duck", "0001"));
+        actualQuiz.add(new quizObject("What was Google originally called?", "Googles", "Backrub", "Googol", "I'm pretty sure it was still Google", "0100"));
+        actualQuiz.add(new quizObject("Who is the current CEO of Google?", "Kevin Ong", "Eric Schmidt", "Sundar Pichai", "John Cena", "0010"));
+        actualQuiz.add(new quizObject("What was Google's first tweet that they did in binary?", "I'm Feeling Lucky", "Hello World", "We should hire Kevin Ong as our CEO", "veni, vidi, vici", "1000"));
+        actualQuiz.add(new quizObject("Which of these Google projects existed?", "Google Minus", "Google Deathstar", "Google Hex", "Google Weddings", "0001"));
+        actualQuiz.add(new quizObject("Google acquired Youtube from a meeting in where?", "Hong Kong", "Denys", "Costco", "Google HQ", "0100"));
+        actualQuiz.add(new quizObject("Did you google any of the answers? (I won't dock you points for being honest)", "Yes", "No", "Not telling", "No I used Bing", "1000"));
+        actualQuiz.add(new quizObject("What should everyone set their default browser as", "Chrome", "Firefox", "Safari", "Internet Explorer", "1000"));
 
     }
 

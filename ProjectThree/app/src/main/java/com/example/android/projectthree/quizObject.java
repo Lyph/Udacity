@@ -7,8 +7,8 @@ public class quizObject {
 
     String question;
     String A,B,C,D;
-    String correct = ""; // tells what position is correct 0 = a etc.
-    String input = "";
+    String correct ="";
+    int[] input = {0,0,0,0};
     int questionType;
     int point; //allocate points (0 or 1) needed for on click listener
 
@@ -30,7 +30,8 @@ public class quizObject {
         D = textD;
         point = -1000;
         correct = cor;
-        ;
+
+
     }
 
 
@@ -40,9 +41,16 @@ public class quizObject {
     public String getB() {return B;}
     public String getC() {return C;}
     public String getD() {return D;}
-    public void setPoint(int pt){point = pt;}           public int getPoint(){return point;}
-    public void setCorrect(String cor){correct = cor;}  public String getCorrect() {return correct;}
-    public void setInput(String in) {input = in;}       public String getInput() {return input;}
+
+    public void setPoint(int pt){point = pt;}
+    public int getPoint(){return point;}
+
+    public void setCorrect(String cor) {correct = cor;}
+    public String getCorrect() {return correct;}
+
+
+    public void setInput(int in, int pos) {input[pos] = in;}
+    public int[] getInput() {return input;}
 
 
 }

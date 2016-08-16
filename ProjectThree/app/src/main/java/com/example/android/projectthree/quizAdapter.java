@@ -61,40 +61,40 @@ public class quizAdapter extends BaseAdapter {
             @Override
             public void onClick(View v) {
 
-                if (q.get(position).getCorrect() == "a") {q.get(position).point = 1;}//position for a
+                if (q.get(position).getCorrect().charAt(0) == '1') {q.get(position).point = 1;}//position for a
                 else{q.get(position).point = 0;}//this needs to be included because if the right answer is selected then deselected, it won't reset to 0 automatically
-                q.get(position).setInput("a");
+                q.get(position).setInput(1,0);
             }
         });
         viewHolder.b = (RadioButton) convertView.findViewById(R.id.b);
         viewHolder.b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (q.get(position).getCorrect() == "b") {q.get(position).point = 1;}//position for b
+                if (q.get(position).getCorrect().charAt(1) == '1') {q.get(position).point = 1;}//position for b
                 else{q.get(position).point = 0;}
-                q.get(position).setInput("b");
+                q.get(position).setInput(1,1);
             }
         });
         viewHolder.c = (RadioButton) convertView.findViewById(R.id.c);
         viewHolder.c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (q.get(position).getCorrect() == "c") {q.get(position).point = 1;}//position for c
+                if (q.get(position).getCorrect().charAt(2) == '1') {q.get(position).point = 1;}//position for c
                 else{q.get(position).point = 0;}
-                q.get(position).setInput("c");
+                q.get(position).setInput(1,2);
             }
         });
         viewHolder.d = (RadioButton) convertView.findViewById(R.id.d);
         viewHolder.d.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (q.get(position).getCorrect() == "d") {
+                if (q.get(position).getCorrect().charAt(3) == '1') {
                     q.get(position).point = 1;
                 }//position for d
                 else {
                     q.get(position).point = 0;
                 }
-                q.get(position).setInput("d");
+                q.get(position).setInput(1,3);
             }
         });
 
@@ -105,31 +105,16 @@ public class quizAdapter extends BaseAdapter {
         viewHolder.d.setText(q.get(position).getD());
 
         //reset
-        viewHolder.a.setChecked(false);
+     /*   viewHolder.a.setChecked(false);
         viewHolder.b.setChecked(false);
         viewHolder.c.setChecked(false);
-        viewHolder.d.setChecked(false);
+        viewHolder.d.setChecked(false);*/
 
-        for(int i = 0; i<q.get(position).getInput().length(); i++){
+        if (q.get(position).getInput()[0] == 1){viewHolder.a.setChecked(true);}
+        if (q.get(position).getInput()[1] == 1){viewHolder.b.setChecked(true);}
+        if (q.get(position).getInput()[2] == 1){viewHolder.c.setChecked(true);}
+        if (q.get(position).getInput()[3] == 1){viewHolder.d.setChecked(true);}
 
-            switch(q.get(position).getInput().charAt(i)) {
-                case 'a':
-                    viewHolder.a.setChecked(true);
-                    break;
-
-                case 'b':
-                    viewHolder.b.setChecked(true);
-                    break;
-
-                case 'c':
-                    viewHolder.c.setChecked(true);
-                    break;
-
-                case 'd':
-                    viewHolder.d.setChecked(true);
-                    break;
-            }
-        }
 
         convertView.setTag(viewHolder);
 
